@@ -95,12 +95,12 @@ body {
 
 .bonus {
     background-color: #65B8DF;
-    flex: 1 1  calc(25% - 20px);
+    flex: 1 1 calc(25% - 20px);
 }
 
 .news {
     background-color: #57d9b7;
-    flex: 1 1  calc(25% - 20px);
+    flex: 1 1 calc(25% - 20px);
 }
 
 .games {
@@ -113,7 +113,7 @@ body {
     background-image: url(img/shop-fon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    flex: 1 1  calc(50% - 20px);
+    flex:  calc(50% - 20px);
 }
 
 .licey {
@@ -121,13 +121,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    flex: 1 1 calc(25% - 20px);
-
+    flex: calc(25% - 20px);
 }
 
 .wink {
     background-color: #273A64;
-    flex: 1 1 calc(25% - 20px);
+    flex: calc(25% - 20px);
 }
 
 
@@ -192,6 +191,7 @@ body {
 
     .row {
         flex-wrap: wrap;
+        min-width: 280px;
     }
 
     .block {
