@@ -18,8 +18,11 @@ body {
 }
 
 .row {
-    display: flex;
     display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     flex-wrap: no-wrap;
     justify-content: space-around;
     margin: 20px 20px 0;
@@ -28,6 +31,10 @@ body {
 .block {
     margin-right: 20px;
     border-radius: 10px;
+}
+
+.block:nth-child(3) {
+    margin-right: 0;
 }
 
 .block-bg {
@@ -99,7 +106,7 @@ body {
 .games {
     background: url(img/games-fon.jpg) no-repeat;
     background-size: cover;
-    flex: 1 1 calc(50% - 20px);
+    flex: 1 1  calc(50% - 20px);
 }
 
 .shop {
@@ -174,7 +181,6 @@ body {
 
     .wink {
         flex: 1 1 calc(50% - 20px);
-        
     }
     
 }
@@ -184,6 +190,11 @@ body {
 
     .row {
         flex-wrap: wrap;
+        min-width: 280px;
+    }
+
+    .block {
+        margin-right: 0;
     }
 
     .row:nth-child(2) {
