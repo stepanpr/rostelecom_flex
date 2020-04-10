@@ -1,4 +1,13 @@
 
+
+@font-face {
+    font-family: 'Rostelecom Basis'; /* Гарнитура шрифта */
+    src: url(font/rostelecombasis.ttf); /* Путь к файлу со шрифтом */
+   }
+   h1 {
+    font-family: Pompadur, 'Comic Sans MS', cursive;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -28,14 +37,15 @@ body {
     margin: 20px 20px 0;
 }
 
+.row:nth-child(2) {
+    margin-bottom: 60px;
+}
+
 .block {
     margin-right: 20px;
     border-radius: 10px;
 }
 
-.block:nth-child(3) {
-    margin-right: 0;
-}
 
 .block-bg {
     background-color: rgba(0, 0, 0, .5);
@@ -43,13 +53,6 @@ body {
     width: 100%;
 }
 
-/* .block + .block {
-    margin-left: 20px;
-} */
-
-.block-bg {
-     margin-right: 20px;
-}
 
 .block-bg,
 .bonus,
@@ -62,7 +65,6 @@ body {
     align-items: flex-start;
     justify-content: space-between;
 }
-
 
 .image {
     margin-top: 80px;
@@ -113,7 +115,7 @@ body {
     background-image: url(img/shop-fon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    flex:  calc(50% - 20px);
+    flex: 1 1 calc(50% - 20px);
 }
 
 .licey {
@@ -121,16 +123,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    flex: calc(25% - 20px);
+    flex: 1 1 calc(25% - 20px);
 }
 
 .wink {
     background-color: #273A64;
-    flex: calc(25% - 20px);
+    flex: 1 1 calc(25% - 20px);
 }
-
-
-
 
 
 
@@ -138,10 +137,6 @@ body {
 
     .row {
         flex-wrap: wrap;
-    }
-
-    .row:nth-child(2) {
-        margin-bottom: 60px;
     }
 
     .bonus + .news,
@@ -181,10 +176,10 @@ body {
 
     .wink {
         flex: 1 1 calc(50% - 20px);
-        
     }
     
 }
+
 
 
 @media (max-width: 768px) {
@@ -196,10 +191,6 @@ body {
 
     .block {
         margin-right: 0;
-    }
-
-    .row:nth-child(2) {
-        margin-bottom: 60px;
     }
 
     .bonus + .news,
